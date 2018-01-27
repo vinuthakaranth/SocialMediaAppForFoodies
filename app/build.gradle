@@ -1,0 +1,91 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+    defaultConfig {
+        applicationId "com.connect.foodies.foodies"
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled = true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support:support-v4:26.+'
+    testCompile 'junit:junit:4.12'
+
+    //Design library for Coordinator Layout and Toolbars
+    compile 'com.android.support:design:26.+'
+
+    // For Constraint layout
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    //BottomNavigationViewEx library
+    compile 'com.github.ittianyu:BottomNavigationViewEx:1.1.9'
+
+    //Circle ImageView
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+
+    //Universal image loader
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+
+    //firebase authentication
+    compile 'com.google.firebase:firebase-auth:10.2.6'
+
+    //firebase database
+    compile 'com.google.firebase:firebase-database:10.2.6'
+
+    //firebase storage
+    compile 'com.google.firebase:firebase-storage:10.2.6'
+
+    //firebase push notifications
+    compile 'com.google.firebase:firebase-messaging:10.2.6'
+
+    //Cardview
+    compile 'com.android.support:cardview-v7:21.0.+'
+    //Recyclerview
+    compile 'com.android.support:recyclerview-v7:21.0.+'
+
+    //ViewPager Animations
+    compile 'com.ToxicBakery.viewpager.transforms:view-pager-transforms:1.2.32@aar'
+
+    //Wasabeef RecycleView Animators
+    compile 'jp.wasabeef:recyclerview-animators:2.2.0'
+
+    //Map
+    compile 'com.google.android.gms:play-services:10.2.6'
+    compile 'com.google.android.gms:play-services-auth:10.2.6'
+    compile 'com.google.android.gms:play-services-maps:10.2.6'
+    compile 'com.google.android.gms:play-services-location:10.2.6'
+    compile 'com.google.android.gms:play-services-places:10.2.6'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'noman.placesapi:placesAPI:1.1.3'
+
+    compile 'com.alimuzaffar.lib:animated-edit-text:1.1'
+
+
+    //Retrofit
+    compile 'com.squareup.retrofit:retrofit:2.0.0-beta2'
+    compile 'com.google.code.gson:gson:1.7.2'
+    compile 'com.squareup.retrofit:converter-gson:2.0.0-beta2'
+    compile 'com.squareup.okhttp:okhttp:2.4.0'
+}
+
+//Firebase
+apply plugin: 'com.google.gms.google-services'
