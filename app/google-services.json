@@ -19,7 +19,7 @@
           "client_type": 1,
           "android_info": {
             "package_name": "com.connect.foodies.foodies",
-            "certificate_hash": "951a11c6523d30c114ea997df6e7b6a1e964c42f"
+            "certificate_hash": ""
           }
         },
         {
@@ -29,7 +29,7 @@
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDuLjv7S4AWnD6aZKgSBXKXv3Z5UvqCnC0"
+          "current_key": ""
         }
       ],
       "services": {
