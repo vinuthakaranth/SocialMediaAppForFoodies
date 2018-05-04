@@ -8,8 +8,7 @@ This is a Social networking android app for food lovers. It is a way to connect 
 6.Current Location and nearby Restaurants
 7.Uses Firebase as Database
 
-Edit file google-services.json with your api key before running the code
-
+Replace file google-services.json with your own firebase json file before executing the code
 Details:
 -Build on API 25: Android 7.1.1 (Nougat)
 -Minimum SDK 21 is required
